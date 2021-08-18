@@ -28,9 +28,14 @@
 
         <link rel="stylesheet" href="./assets/css/aos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Simpl. Design Studio — Home</title>
+        <title>Simpl. Design Studio — Contact</title>
     </head>
     <body>
+      <div class="loader-wrapper">
+          <i class='layer'></i>
+          <i class='layer'></i>
+          <i class='layer'></i>
+      </div>
         <nav class="navbar navbar-expand-lg global-padding">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -232,6 +237,9 @@
           });
         </script>
         <script>
+          $(document).ready(function() {
+              $('.loader-wrapper').delay(3000).hide();
+          });
           // Jquery Dependency
 
 $("input[data-type='currency']").on({

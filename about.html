@@ -26,9 +26,14 @@
         <link href="./assets/css/nav.css" rel="stylesheet">
         <link href="./assets/css/nav-responsive.css" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/aos.css">
-        <title>Simpl. Design Studio — Home</title>
+        <title>Simpl. Design Studio — About</title>
     </head>
     <body>
+      <div class="loader-wrapper">
+        <i class='layer'></i>
+        <i class='layer'></i>
+        <i class='layer'></i>
+    </div>
         <nav class="navbar navbar-expand-lg global-padding">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -168,6 +173,9 @@
             anchorPlacement: 'top-center', // defines which position of the element regarding to window should trigger the animation
           });
           window.addEventListener('load', AOS.refresh)
+          $(document).ready(function() {
+              $('.loader-wrapper').delay(3000).hide();
+          });
         </script>
     </body>
 </html>
