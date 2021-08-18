@@ -1,0 +1,101 @@
+.navbar-brand {
+    font-family: 'made-tommy', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    color: var(--font-color);
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.navbar {
+    min-height: 120px;
+    background-color: var(--bg-color);
+    z-index: 1000;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-link {
+    font-family: 'made-tommy', sans-serif;
+    color: var(--font-low-color);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-item {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.nav-link.active {
+    font-weight: 500;
+    color: var(--font-color);
+    pointer-events: none;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.btn, .btn {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    font-size: 1rem;
+    color: var(--font-color);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    font-size: 1rem;
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: var(--font-color);
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
