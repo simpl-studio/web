@@ -3,8 +3,8 @@ html,body {
     font-size: 14px;
 }
 .global-padding {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
 }
 
 .xl {
@@ -33,12 +33,19 @@ html,body {
 }
 
   .hero-head {
-      height: 60vh;
+      height: 40vh;
+      width: 100% !important;
       padding-top: auto;
       padding-bottom: auto;
       padding-left: 0;
       padding-right: 0;
   }
+
+mark{
+  background-color:var(--primary-color);
+  padding:0.1rem;
+ }
+
 
     h1 {
       font-size: 2.4rem;
@@ -54,12 +61,11 @@ h4 {
 }
 
   .hero-head p {
-      font-size: 16px;
+      font-size: 22px;
   }
 
   .cta-area {
     width: 100%;
-    flex-direction: column;
 }
 
 #kv-img img {
@@ -69,6 +75,7 @@ h4 {
 .w80 {
     width: 100%;
 }
+
 
 img.rounded {
     border-radius: 8px !important;
@@ -87,6 +94,43 @@ img.rounded {
     font-size: 1rem;
     text-align: center;
     width: 100%;
+}
+
+.project-card {
+    border-radius: 8px;
+    margin: 24px 0;
+    padding-left: 0;
+    background-color: #F1F3F6;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.project-card .info {
+    padding: 16px;
+    width: 100%;
+    padding-top: 24px;
+}
+
+.project-card img {
+    width: 60% !important;
+    height: auto;
+    margin-left: 0;
+}
+
+.project-card h2 {
+  color: rgba(49, 53, 59, .92) !important;
+}
+
+.project-card h2 {
+    font-size: 2rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: rgba(49, 53, 59, .68);
 }
 
 }

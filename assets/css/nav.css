@@ -12,8 +12,7 @@
 }
 
 .navbar {
-    min-height: 120px;
-    background-color: var(--bg-color);
+    min-height: 100px;
     z-index: 1000;
 }
 
